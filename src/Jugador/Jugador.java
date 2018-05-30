@@ -3,12 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fabricas;
+package Jugador;
+
+import Unidades.unidad;
 
 /**
  *
  * @author Raul Calderon <https://github.com/calderonra>
  */
-public interface FabricaAbs {
-   // raza getraza(String type);
+public class Jugador {
+    public int vida=0;
+    public int oro=0;
+    public int piedra=0;
+    public int madera=0;
+   
+    
 }

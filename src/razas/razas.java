@@ -3,12 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fabricas;
+package razas;
 
 /**
  *
  * @author Raul Calderon <https://github.com/calderonra>
  */
-public interface FabricaAbs {
-   // raza getraza(String type);
+public interface razas {
+    void crearRaza();
+    
 }

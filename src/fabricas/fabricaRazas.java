@@ -9,6 +9,6 @@ package fabricas;
  *
  * @author Raul Calderon <https://github.com/calderonra>
  */
-public interface FabricaAbs {
-   // raza getraza(String type);
+public class fabricaRazas {
+    
 }
