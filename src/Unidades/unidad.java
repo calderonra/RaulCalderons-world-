@@ -15,35 +15,53 @@ public class unidad {
     public int fase;
     public int costo;
 
-    public unidad() {
+    public unidad(int vida, int atk, int fase, int costo) {
+        this.vida = vida;
+        this.atk = atk;
+        this.fase = fase;
+        this.costo = costo;
+    }
+
+    unidad() {
+        
+    }
+
+    public int getVida() {
+        return vida;
     }
 
     public void setVida(int vida) {
         this.vida = vida;
     }
 
+    public int getAtk() {
+        return atk;
+    }
+
     public void setAtk(int atk) {
         this.atk = atk;
+    }
+
+    public int getFase() {
+        return fase;
     }
 
     public void setFase(int fase) {
         this.fase = fase;
     }
 
+    public int getCosto() {
+        return costo;
+    }
+
     public void setCosto(int costo) {
         this.costo = costo;
     }
+
     
     
     
-    public void crearunidad(){
-        unidad unidad = new unidad();
-        unidad.atk=0;
-        unidad.costo=0;
-        unidad.vida=0;
-        unidad.fase=0;
-   
-    };
+    
     
     
     
