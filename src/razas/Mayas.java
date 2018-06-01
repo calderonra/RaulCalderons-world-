@@ -3,14 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fabricas;
-
-import razas.razas;
+package razas;
 
 /**
  *
- * @author Raul Calderon <https://github.com/calderonra>
+ * @author Raul Calderon
  */
-public interface FabricaAbs {
-    razas getraza(String type);
+public class Mayas implements razas {
+
+    @Override
+    public void crearRaza() {
+        
+    }
+    
 }

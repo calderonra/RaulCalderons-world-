@@ -5,10 +5,20 @@
  */
 package fabricas;
 
+import razas.razas;
+
 /**
  *
  * @author Raul Calderon <https://github.com/calderonra>
  */
-public class fabricaRazas {
+public class fabricaRazas implements FabricaAbs {
+    
+   
+    @Override
+    public razas getraza(String type) {
+        
+        
+        return null;
+    }
     
 }

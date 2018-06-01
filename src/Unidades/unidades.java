@@ -31,11 +31,13 @@ public class unidades {
     public static void crearUnidad(){
         System.out.println("¿Que tipo de unidad desea crear? ");
         Scanner scan = new Scanner(System.in);
-        String s = scan.next();
-        if (s=="soldado"){
+        String in = scan.nextLine();
+        
+        if (in.equalsIgnoreCase("soldado")){
+            System.out.println("hola");
             tropas.add(new unidad(0,0,0,0));
         }
-        else if(s=="super soldado"){
+        else if(in.equalsIgnoreCase("super soldado")){
             tropas.add(new unidad(10,10,10,10));
         }
       
