@@ -3,28 +3,31 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Unidades;
+package Estructuras;
 
 /**
  *
- * @author Raul Calderon <https://github.com/calderonra>
+ * @author Raul Calderon
  */
-public class unidad {
+public class estructura {
     private String nombre;
     public int vida;
-    public int atk;
     public int fase;
     public int costo;
 
-    public unidad(int vida, int atk, int fase, int costo) {
+    public estructura(String nombre, int vida, int fase, int costo) {
+        this.nombre = nombre;
         this.vida = vida;
-        this.atk = atk;
         this.fase = fase;
         this.costo = costo;
     }
 
-    unidad() {
-        
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public int getVida() {
@@ -33,14 +36,6 @@ public class unidad {
 
     public void setVida(int vida) {
         this.vida = vida;
-    }
-
-    public int getAtk() {
-        return atk;
-    }
-
-    public void setAtk(int atk) {
-        this.atk = atk;
     }
 
     public int getFase() {
@@ -58,12 +53,6 @@ public class unidad {
     public void setCosto(int costo) {
         this.costo = costo;
     }
-
-    
-    
-    
-    
-    
     
     
 }

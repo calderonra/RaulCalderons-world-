@@ -22,9 +22,9 @@ public class RaulCalderonsWorld {
      */
     public static void main(String[] args) {
         FabricaAbs fabrica = FabricadeFabricas.getfabrica("razas");
-        razas maya = fabrica.getraza("Persas");
-        maya.crearRaza();
-      
+        razas persa = fabrica.getraza("Persas");
+        persa.crearRaza();
+
     }
-    
+
 }

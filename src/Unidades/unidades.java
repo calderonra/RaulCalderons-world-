@@ -42,5 +42,37 @@ public class unidades {
         }
       
     }
+    
+    public static void modificarUnidadesPersa(){
+        int i;
+        for ( i=0;i<tropas.size();i++){
+            System.out.println("modificando valores");
+            tropas.set(i,new unidad(50,50,2,10));
+        }
+    }
+    
+    
+    public static void modificarUnidadesMaya(){
+        int i;
+        for ( i=0;i<tropas.size();i++){
+            System.out.println("modificando valores");
+            tropas.set(i,new unidad(20,30,2,10));
+        }
+    }
+    
+    
+    public static void modificarUnidadesTeutones(){
+        int i;
+        for ( i=0;i<tropas.size();i++){
+            System.out.println("modificando valores");
+            tropas.set(i,new unidad(40,30,2,10));
+        }
+    }
+    
+    
+    
+    
+    
+    
 
 }

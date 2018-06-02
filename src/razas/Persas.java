@@ -17,6 +17,12 @@ public class Persas implements razas {
         Jugador.jugadores.iniciarJugadores();
         Unidades.unidades.iniciarUnidades();
        Unidades.unidades.mostrarUnidades();
+       Unidades.unidades.modificarUnidadesPersa();
+       Estructuras.MetodosDeEstructura.inicarEstructura();
+       Estructuras.MetodosDeEstructura.mostrarEstrcutura();
+       Estructuras.MetodosDeEstructura.agregarEstructura();
+       Estructuras.MetodosDeEstructura.mostrarEstrcutura();
+       
     }
     
 }
