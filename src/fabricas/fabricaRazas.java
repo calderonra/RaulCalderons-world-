@@ -5,6 +5,9 @@
  */
 package fabricas;
 
+import razas.Mayas;
+import razas.Persas;
+import razas.Teutones;
 import razas.razas;
 
 /**
@@ -16,8 +19,17 @@ public class fabricaRazas implements FabricaAbs {
    
     @Override
     public razas getraza(String type) {
-        
-        
+        System.out.println("se entra a la fabrica de razas");
+        switch(type){
+            case "Mayas":
+                return new Mayas();
+            case "Persas":
+                
+                return new Persas();
+            case "Teutones":
+                return new Teutones(); 
+    }
+       
         return null;
     }
     

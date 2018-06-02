@@ -7,6 +7,9 @@ package raulcalderons.world;
 
 import Jugador.jugadores;
 import Unidades.unidad;
+import fabricas.FabricaAbs;
+import fabricas.FabricadeFabricas;
+import razas.razas;
 
 /**
  *
@@ -18,10 +21,10 @@ public class RaulCalderonsWorld {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-      Unidades.unidades.iniciarUnidades();
-      Unidades.unidades.mostrarUnidades();
-      Unidades.unidades.crearUnidad();
-      Unidades.unidades.mostrarUnidades();
+        FabricaAbs fabrica = FabricadeFabricas.getfabrica("razas");
+        razas maya = fabrica.getraza("Persas");
+        maya.crearRaza();
+      
     }
     
 }
