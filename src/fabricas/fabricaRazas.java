@@ -24,7 +24,6 @@ public class fabricaRazas implements FabricaAbs {
             case "Mayas":
                 return new Mayas();
             case "Persas":
-                
                 return new Persas();
             case "Teutones":
                 return new Teutones(); 

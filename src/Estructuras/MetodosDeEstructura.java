@@ -19,7 +19,7 @@ public class MetodosDeEstructura {
     public static void mostrarEstrcutura(){
         int i =1;
         for(estructura e : edificios){
-            System.out.println(i+" "+e);
+            System.out.println(i+" "+e.toString());
             i++;
         }
     }

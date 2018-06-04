@@ -54,5 +54,9 @@ public class estructura {
         this.costo = costo;
     }
     
-    
+    @Override 
+            public String toString(){
+                return "nombre:  "+nombre+ "vida: "+ vida+ "\nataque: ";
+            }
+   
 }

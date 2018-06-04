@@ -16,15 +16,20 @@ public class unidad {
     public int fase;
     public int costo;
 
-    public unidad(int vida, int atk, int fase, int costo) {
+    public unidad(String nombre, int vida, int atk, int fase, int costo) {
+        this.nombre = nombre;
         this.vida = vida;
         this.atk = atk;
         this.fase = fase;
         this.costo = costo;
     }
 
-    unidad() {
-        
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public int getVida() {
@@ -59,6 +64,14 @@ public class unidad {
         this.costo = costo;
     }
 
+   
+    
+    
+@Override 
+            public String toString(){
+                return "nombre:  "+nombre+ "vida: "+ vida+ "\nataque: "+atk+"\n";
+            }
+   
     
     
     

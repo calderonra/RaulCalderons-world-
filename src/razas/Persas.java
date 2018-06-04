@@ -13,15 +13,12 @@ public class Persas implements razas {
 
     @Override
     public void crearRaza() {
-        System.out.println("hola :0");
+        
         Jugador.jugadores.iniciarJugadores();
         Unidades.unidades.iniciarUnidades();
        Unidades.unidades.mostrarUnidades();
        Unidades.unidades.modificarUnidadesPersa();
-       Estructuras.MetodosDeEstructura.inicarEstructura();
-       Estructuras.MetodosDeEstructura.mostrarEstrcutura();
-       Estructuras.MetodosDeEstructura.agregarEstructura();
-       Estructuras.MetodosDeEstructura.mostrarEstrcutura();
+       Unidades.unidades.mostrar();
        
     }
     
