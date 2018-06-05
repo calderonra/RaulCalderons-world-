@@ -29,11 +29,18 @@ public class MetodosDeEstructura {
         Scanner scan = new Scanner(System.in);
         String in = scan.nextLine();
         
-        if (in.equalsIgnoreCase("cuartel")){
+        if (in.equalsIgnoreCase("Mina de piedra")){
             System.out.println("Creando estructura");
-            edificios.add(new estructura("",0,0,0));
+            edificios.add(new estructura("Mina de piedra",200,2,100));
         }
-        
+        else if (in.equalsIgnoreCase("Mina de oro")){
+            System.out.println("Creando estructura");
+            edificios.add(new estructura("Mina de oro",200,2,100));
+        }
+        else if (in.equalsIgnoreCase("Mina de madera")){
+            System.out.println("Creando estructura");
+            edificios.add(new estructura("Mina de madera",200,2,100));
+        }
     }
     
 }
