@@ -6,6 +6,7 @@
 package raulcalderons.world;
 
 import Jugador.jugadores;
+import Menu.ElMenu;
 import Unidades.unidad;
 import fabricas.FabricaAbs;
 import fabricas.FabricadeFabricas;
@@ -24,7 +25,10 @@ public class RaulCalderonsWorld {
         FabricaAbs fabrica = FabricadeFabricas.getfabrica("razas");
         razas persa = fabrica.getraza("Persas");
         persa.crearRaza();
-
+         int opcion = 4;
+         ElMenu menu = new ElMenu();
+         menu.opciones();
+         menu.menu();
     }
 
 }

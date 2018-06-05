@@ -12,7 +12,8 @@ import java.util.Scanner;
  * @author Raul Calderon <https://github.com/calderonra>
  */
 public class ElMenu {
-     public void opciones() {
+
+    public void opciones() {
         System.out.println("---- Menu de jugador ----");
         System.out.println("1. Crear minas");
         System.out.println("2. Crear soldados");
@@ -23,49 +24,48 @@ public class ElMenu {
         System.out.println("7. Finalizar turno");
         System.out.print(": ");
     }
-     
-     public void menu(){
-         
-         Scanner leer = new Scanner(System.in);
-         int opcion =8;
-         int opcion2=8;
-         while(opcion !=7){
-             opciones();
-             try{
-                 opcion=leer.nextInt();
-                 switch(opcion){
-                     case 1:
-                         //
-                         break;
-                     case 2:
-                         //
-                         break;    
+
+    public void menu() {
+
+        Scanner leer = new Scanner(System.in);
+        int opcion = 8;
+        int opcion2 = 8;
+        while (opcion != 7) {
+            opciones();
+            try {
+                opcion = leer.nextInt();
+                switch (opcion) {
+                    case 1:
+                        //
+                        break;
+                    case 2:
+                        //
+                        break;
                     case 3:
-                         //
-                         break;
+                        //
+                        break;
                     case 4:
-                         //
-                         break;
+                        //
+                        break;
                     case 5:
-                         //
-                         break;
+                        //
+                        break;
                     case 6:
-                         //
-                         break;
+                        //
+                        break;
                     case 7:
-                         //
-                         break;     
-                 }
-                 
-             }
-             catch (Exception e){
-                 System.err.println("ingrese numero por favor!");
-                 leer.nextLine();
-             }
-         }
-         
-         
-     }
-     
-     
+                        //
+                        break;
+                    default:
+                        System.err.println("    Por favor ingrese una opción valida");
+                }
+
+            } catch (Exception e) {
+                System.err.println("ingrese numero por favor!");
+                leer.nextLine();
+            }
+        }
+
+    }
+
 }
