@@ -7,6 +7,7 @@ package raulcalderons.world;
 
 import Jugador.jugadores;
 import Menu.ElMenu;
+import Menu.ElMenuDeRazas;
 import Unidades.unidad;
 import fabricas.FabricaAbs;
 import fabricas.FabricadeFabricas;
@@ -22,13 +23,11 @@ public class RaulCalderonsWorld {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        FabricaAbs fabrica = FabricadeFabricas.getfabrica("razas");
-        razas persa = fabrica.getraza("Persas");
-        persa.crearRaza();
-         int opcion = 4;
-         ElMenu menu = new ElMenu();
-         menu.opciones();
-         menu.menu();
+        ElMenu menu =new ElMenu();
+        ElMenuDeRazas n=new ElMenuDeRazas();
+       // menu.opciones();
+        //menu.menu();
+        n.menuR();
     }
 
 }
