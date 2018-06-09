@@ -16,6 +16,8 @@ public class Jugador {
     public int oro=0;
     public int piedra=0;
     public int madera=0;
+    public boolean estado;
+    public String raza;
 
     public Jugador() {
     }
@@ -24,6 +26,16 @@ public class Jugador {
         return vida;
     }
 
+    public String getRaza() {
+        return raza;
+    }
+
+    public void setRaza(String raza) {
+        this.raza = raza;
+    }
+
+    
+    
     public void setVida(int vida) {
         this.vida = vida;
     }
@@ -51,6 +63,16 @@ public class Jugador {
     public void setMadera(int madera) {
         this.madera = madera;
     }
-   
+
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
+    
+    
+
     
 }

@@ -34,6 +34,7 @@ public class unidades {
      
            System.out.println(tropas.get(i).atk);
            System.out.println(tropas.get(i).vida);
+           
             
         }
     }

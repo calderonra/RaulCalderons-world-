@@ -39,7 +39,8 @@ public class ElMenu {
                         //
                         break;
                     case 2:
-                        //
+                        Unidades.unidades.crearUnidad();
+                        Unidades.unidades.mostrarUnidades();
                         break;
                     case 3:
                         //

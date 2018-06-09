@@ -5,6 +5,7 @@
  */
 package raulcalderons.world;
 
+import Fases.fases;
 import Jugador.jugadores;
 import Menu.ElMenu;
 import Menu.ElMenuDeRazas;
@@ -27,7 +28,11 @@ public class RaulCalderonsWorld {
         ElMenuDeRazas n=new ElMenuDeRazas();
        // menu.opciones();
         //menu.menu();
-        n.menuR();
+       // n.menuR();
+        
+        fases fases = new fases();
+        fases.inicio();
+        
     }
 
 }

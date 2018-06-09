@@ -10,11 +10,7 @@ package Jugador;
  * @author Raul Calderon
  */
 public class jugadores {
-    
-    public static void iniciarJugadores(){
-        Jugador player1 = new Jugador();
-        Jugador player2 = new Jugador();
-    }
+   
     
    
 }

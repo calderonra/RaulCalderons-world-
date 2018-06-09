@@ -24,7 +24,7 @@ public class vehiculo {
         this.costo = costo;
     }
 
-    vehiculo(String _, int i, int i0, int i1) {
+    vehiculo(String nombre, int i, int i0, int i1) {
        
     }
 

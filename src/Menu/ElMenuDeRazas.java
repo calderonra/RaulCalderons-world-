@@ -45,6 +45,9 @@ public class ElMenuDeRazas {
                         FabricaAbs fabrica = FabricadeFabricas.getfabrica("razas");
                         razas persa = fabrica.getraza("Persas");
                         persa.crearRaza();
+                        opcion=4;
+                        ElMenu menu =new ElMenu();
+                        menu.menu();
                         break;
                     default:
                         System.err.println("ingrese una opcion valida!");
