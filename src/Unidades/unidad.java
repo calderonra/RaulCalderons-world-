@@ -10,6 +10,7 @@ package Unidades;
  * @author Raul Calderon <https://github.com/calderonra>
  */
 public class unidad {
+
     private String nombre;
     public int vida;
     public int atk;
@@ -64,19 +65,9 @@ public class unidad {
         this.costo = costo;
     }
 
-   
-    
-    
-@Override 
-            public String toString(){
-                return "nombre:  "+nombre+ "vida: "+ vida+ "\nataque: "+atk+"\n";
-            }
-   
-    
-    
-    
-    
-    
-    
-    
+    @Override
+    public String toString() {
+        return "nombre:  " + nombre + "vida: " + vida + "\nataque: " + atk + "\n";
+    }
+
 }

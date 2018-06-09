@@ -20,7 +20,7 @@ public class fases {
     int limitedefase = 10;
     ElMenuDeRazas n = new ElMenuDeRazas();
     ElMenu menu = new ElMenu();
-     ElMenuDeRazas2 n2 = new ElMenuDeRazas2();
+    ElMenuDeRazas2 n2 = new ElMenuDeRazas2();
     ElMenu2 menu2 = new ElMenu2();
     public static Jugador player1 = new Jugador();
     public static Jugador player2 = new Jugador();
@@ -31,25 +31,32 @@ public class fases {
             int flag = 0;
             player1.setEstado(true);
             player2.setEstado(false);
+            
             while (flag != 1) {
-                System.out.println("ola entre al while :v");
                 if (i == 0) {
-                    System.out.println("entre al primer if :0");
                     System.out.println("Jugador 1 Seleccione su Raza :0");
-                    n.menuR();
+                    String aux=n.menuR();
+                   player1.setRaza(aux);
+                    System.out.println("la raza es"+player1.raza);
                     System.out.println("Jugador 2 Seleccione su Raza :0");
-                    n2.menuR();
-                    flag=1;
+                    String aux1=n2.menuR();
+                   player2.setRaza(aux1);
+                    System.out.println(player2.raza);
+                    flag = 1;
                 } else {
-                    System.out.println("entre al otro momo :0");
                     System.out.println("Turno del jugador 1");
-                    menu.menu();
+                    menu.menu(player1);
                     System.out.println("Turno del jugador 2");
                     menu2.menu();
+                    flag = 1;
                 }
+
             }
             flag = 0;
+            System.out.println("-----------------FASE--------------> " + i);
+
         }
+
     }
 
     public Jugador getJugador() {

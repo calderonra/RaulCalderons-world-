@@ -17,138 +17,125 @@ public class unidades {
     public static ArrayList<unidad> tropas2 = new ArrayList<>();
 
     public static void iniciarUnidades() {
-        tropas1.add(new unidad("soldado",0, 0, 0, 0));
-        tropas1.add(new unidad("soldado",0, 0, 0, 0));
+        tropas1.add(new unidad("soldado", 0, 0, 0, 0));
+        tropas1.add(new unidad("soldado", 0, 0, 0, 0));
     }
-    
-    public static void mostrarUnidades(){
-        int i =1;
-        for(unidad u : tropas1){
-            System.out.println(i+" "+u.toString());
+
+    public static void mostrarUnidades() {
+        int i = 1;
+        for (unidad u : tropas1) {
+            System.out.println(i + " " + u.toString());
             i++;
         }
-    }   
-    
-    public static void mostrar (){
+    }
+
+    public static void mostrar() {
         int i;
-        for (i=1;i<tropas1.size();i++ ){
-     
-           System.out.println(tropas1.get(i).atk);
-           System.out.println(tropas1.get(i).vida);
-           
-            
+        for (i = 1; i < tropas1.size(); i++) {
+
+            System.out.println(tropas1.get(i).atk);
+            System.out.println(tropas1.get(i).vida);
+
         }
     }
-    
-    public static void crearUnidad(){
+
+    public static void crearUnidad() {
         System.out.println("¿Que tipo de unidad desea crear? ");
         Scanner scan = new Scanner(System.in);
         String in = scan.nextLine();
-        
-        if (in.equalsIgnoreCase("soldado")){
+
+        if (in.equalsIgnoreCase("soldado")) {
             //System.out.println("hola");
-            tropas1.add(new unidad("",0,0,0,0));
+            tropas1.add(new unidad("", 0, 0, 0, 0));
+        } else if (in.equalsIgnoreCase("super soldado")) {
+            tropas1.add(new unidad("HAHA SALU2", 10, 10, 10, 10));
         }
-        else if(in.equalsIgnoreCase("super soldado")){
-            tropas1.add(new unidad("HAHA SALU2",10,10,10,10));
-        }
-      
+
     }
-    
-    public static void modificarUnidadesPersa(){
+
+    public static void modificarUnidadesPersa() {
         int i;
-        for ( i=0;i<tropas1.size();i++){
+        for (i = 0; i < tropas1.size(); i++) {
             //System.out.println("modificando valores");
-            tropas1.set(i,new unidad("soldado",50,50,2,10));
+            tropas1.set(i, new unidad("soldado", 50, 50, 2, 10));
         }
     }
-    
-   
-    public static void modificarUnidadesMaya(){
+
+    public static void modificarUnidadesMaya() {
         int i;
-        for ( i=0;i<tropas1.size();i++){
+        for (i = 0; i < tropas1.size(); i++) {
             System.out.println("modificando valores");
-            tropas1.set(i,new unidad("soldado",20,30,2,10));
+            tropas1.set(i, new unidad("soldado", 20, 30, 2, 10));
         }
     }
-    
-    
-    public static void modificarUnidadesTeutones(){
+
+    public static void modificarUnidadesTeutones() {
         int i;
-        for ( i=0;i<tropas1.size();i++){
+        for (i = 0; i < tropas1.size(); i++) {
             System.out.println("modificando valores");
-            tropas1.set(i,new unidad("soldado",40,30,2,10));
+            tropas1.set(i, new unidad("soldado", 40, 30, 2, 10));
         }
     }
-    
-    
+
     public static void iniciarUnidades2() {
-        tropas2.add(new unidad("soldado",0, 0, 0, 0));
-        tropas2.add(new unidad("soldado",0, 0, 0, 0));
+        tropas2.add(new unidad("soldado", 0, 0, 0, 0));
+        tropas2.add(new unidad("soldado", 0, 0, 0, 0));
     }
-    
-    public static void mostrarUnidades2(){
-        int i =1;
-        for(unidad u : tropas2){
-            System.out.println(i+" "+u.toString());
+
+    public static void mostrarUnidades2() {
+        int i = 1;
+        for (unidad u : tropas2) {
+            System.out.println(i + " " + u.toString());
             i++;
         }
-    }   
-    
-    public static void mostrar2(){
+    }
+
+    public static void mostrar2() {
         int i;
-        for (i=1;i<tropas2.size();i++ ){
-     
-           System.out.println(tropas2.get(i).atk);
-           System.out.println(tropas2.get(i).vida);
-           
-            
+        for (i = 1; i < tropas2.size(); i++) {
+
+            System.out.println(tropas2.get(i).atk);
+            System.out.println(tropas2.get(i).vida);
+
         }
     }
-    
-    public static void crearUnidad2(){
+
+    public static void crearUnidad2() {
         System.out.println("¿Que tipo de unidad desea crear? ");
         Scanner scan = new Scanner(System.in);
         String in = scan.nextLine();
-        
-        if (in.equalsIgnoreCase("soldado")){
+
+        if (in.equalsIgnoreCase("soldado")) {
             //System.out.println("hola");
-            tropas2.add(new unidad("",0,0,0,0));
+            tropas2.add(new unidad("", 0, 0, 0, 0));
+        } else if (in.equalsIgnoreCase("super soldado")) {
+            tropas2.add(new unidad("HAHA SALU2", 10, 10, 10, 10));
         }
-        else if(in.equalsIgnoreCase("super soldado")){
-            tropas2.add(new unidad("HAHA SALU2",10,10,10,10));
-        }
-      
+
     }
-    
-    public static void modificarUnidadesPersa2(){
+
+    public static void modificarUnidadesPersa2() {
         int i;
-        for ( i=0;i<tropas2.size();i++){
+        for (i = 0; i < tropas2.size(); i++) {
             //System.out.println("modificando valores");
-            tropas2.set(i,new unidad("soldado",50,50,2,10));
+            tropas2.set(i, new unidad("soldado", 50, 50, 2, 10));
         }
     }
-    
-   
-    public static void modificarUnidadesMaya2(){
+
+    public static void modificarUnidadesMaya2() {
         int i;
-        for ( i=0;i<tropas2.size();i++){
+        for (i = 0; i < tropas2.size(); i++) {
             System.out.println("modificando valores");
-            tropas2.set(i,new unidad("soldado",20,30,2,10));
+            tropas2.set(i, new unidad("soldado", 20, 30, 2, 10));
         }
     }
-    
-    
-    public static void modificarUnidadesTeutones2(){
+
+    public static void modificarUnidadesTeutones2() {
         int i;
-        for ( i=0;i<tropas2.size();i++){
+        for (i = 0; i < tropas2.size(); i++) {
             System.out.println("modificando valores");
-            tropas2.set(i,new unidad("soldado",40,30,2,10));
+            tropas2.set(i, new unidad("soldado", 40, 30, 2, 10));
         }
     }
-    
-    
-    
-    
 
 }

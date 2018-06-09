@@ -24,10 +24,11 @@ public class ElMenuDeRazas {
         System.out.println("ingresa el numero por favor: ");
     }
 
-    public void menuR() {
+    public String menuR() {
         Scanner leer = new Scanner(System.in);
         int opcion = 5;
         int opcion2 = 5;
+        String aux1="";
         while (opcion != 4) {
             opciones();
             try {
@@ -35,10 +36,14 @@ public class ElMenuDeRazas {
                 switch (opcion) {
                     case 1:
                         System.out.println("Seleccionaste a los teutones! :0");
-                        
+                        aux1="Teutones";
+                        opcion=4;
                         break;
+          
                     case 2:
                         System.out.println("Seleccionaste a los mayas! 0:");
+                        aux1= "Maya";
+                        opcion=4;
                         break;
                     case 3:
                         System.out.println("Seleccionaste a los persas :0");
@@ -46,8 +51,9 @@ public class ElMenuDeRazas {
                         razas persa = fabrica.getraza("Persas");
                         persa.crearRaza();
                         opcion=4;
-                        ElMenu menu =new ElMenu();
-                        menu.menu();
+                       // ElMenu menu =new ElMenu();
+                        //menu.menu();
+                        aux1="Persas";
                         break;
                     default:
                         System.err.println("ingrese una opcion valida!");
@@ -57,5 +63,6 @@ public class ElMenuDeRazas {
                 leer.nextLine();
             }
         }
+        return aux1;
     }
 }

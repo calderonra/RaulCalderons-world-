@@ -13,11 +13,10 @@ public class Mayas implements razas {
 
     @Override
     public void crearRaza() {
-        
-       
+
         Unidades.unidades.iniciarUnidades();
-       Unidades.unidades.mostrarUnidades();
-       Unidades.unidades.modificarUnidadesMaya();
+        Unidades.unidades.mostrarUnidades();
+        Unidades.unidades.modificarUnidadesMaya();
     }
-    
+
 }

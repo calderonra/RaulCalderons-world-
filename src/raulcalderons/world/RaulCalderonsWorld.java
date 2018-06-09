@@ -24,15 +24,9 @@ public class RaulCalderonsWorld {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        ElMenu menu =new ElMenu();
-        ElMenuDeRazas n=new ElMenuDeRazas();
-       // menu.opciones();
-        //menu.menu();
-       // n.menuR();
-        
+
         fases fases = new fases();
         fases.inicio();
-        
-    }
 
+    }
 }

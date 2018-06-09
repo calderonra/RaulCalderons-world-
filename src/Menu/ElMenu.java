@@ -5,6 +5,7 @@
  */
 package Menu;
 
+import Jugador.Jugador;
 import java.util.Scanner;
 
 /**
@@ -25,11 +26,12 @@ public class ElMenu {
         System.out.print(": ");
     }
 
-    public void menu() {
+    public void menu(Jugador player) {
 
         Scanner leer = new Scanner(System.in);
         int opcion = 8;
         int opcion2 = 8;
+        
         while (opcion != 7) {
             opciones();
             try {
