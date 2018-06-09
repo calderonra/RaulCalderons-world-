@@ -6,6 +6,7 @@
 package Unidades;
 
 import java.util.*;
+import razas.razas;
 
 /**
  *
@@ -16,7 +17,7 @@ public class unidades {
     public static ArrayList<unidad> tropas1 = new ArrayList<>();
     public static ArrayList<unidad> tropas2 = new ArrayList<>();
 
-    public static void iniciarUnidades() {
+    public static void iniciarUnidades(razas raza) {
         tropas1.add(new unidad("soldado", 0, 0, 0, 0));
         tropas1.add(new unidad("soldado", 0, 0, 0, 0));
     }

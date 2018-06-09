@@ -31,41 +31,44 @@ public class ElMenu {
         Scanner leer = new Scanner(System.in);
         int opcion = 8;
         int opcion2 = 8;
-        
-        while (opcion != 7) {
-            opciones();
-            try {
-                opcion = leer.nextInt();
-                switch (opcion) {
-                    case 1:
-                        //
-                        break;
-                    case 2:
-                        Unidades.unidades.crearUnidad();
-                        Unidades.unidades.mostrarUnidades();
-                        break;
-                    case 3:
-                        //
-                        break;
-                    case 4:
-                        //
-                        break;
-                    case 5:
-                        //
-                        break;
-                    case 6:
-                        //
-                        break;
-                    case 7:
-                        //
-                        break;
-                    default:
-                        System.err.println("    Por favor ingrese una opción valida");
-                }
+        String aux = player.getRaza();
+        if (aux == "Teutones") {
 
-            } catch (Exception e) {
-                System.err.println("ingrese numero por favor!");
-                leer.nextLine();
+            while (opcion != 7) {
+                opciones();
+                try {
+                    opcion = leer.nextInt();
+                    switch (opcion) {
+                        case 1:
+                            //
+                            break;
+                        case 2:
+                            Unidades.unidades.crearUnidad();
+                            Unidades.unidades.mostrarUnidades();
+                            break;
+                        case 3:
+                            //
+                            break;
+                        case 4:
+                            //
+                            break;
+                        case 5:
+                            //
+                            break;
+                        case 6:
+                            //
+                            break;
+                        case 7:
+                            //
+                            break;
+                        default:
+                            System.err.println("    Por favor ingrese una opción valida");
+                    }
+
+                } catch (Exception e) {
+                    System.err.println("ingrese numero por favor!");
+                    leer.nextLine();
+                }
             }
         }
 
