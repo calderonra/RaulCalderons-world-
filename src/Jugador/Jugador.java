@@ -18,24 +18,20 @@ public class Jugador {
     public int madera=0;
     public boolean estado;
     public String raza;
+    public int clasedejugador=0;
 
     public Jugador() {
+    }
+
+    public Jugador(boolean estado, String raza) {
+        this.estado = estado;
+        this.raza = raza;
     }
 
     public int getVida() {
         return vida;
     }
 
-    public String getRaza() {
-        return raza;
-    }
-
-    public void setRaza(String raza) {
-        this.raza = raza;
-    }
-
-    
-    
     public void setVida(int vida) {
         this.vida = vida;
     }
@@ -71,7 +67,23 @@ public class Jugador {
     public void setEstado(boolean estado) {
         this.estado = estado;
     }
-    
+
+    public String getRaza() {
+        return raza;
+    }
+
+    public void setRaza(String raza) {
+        this.raza = raza;
+    }
+
+    public int getClasedejugador() {
+        return clasedejugador;
+    }
+
+    public void setClasedejugador(int clasedejugador) {
+        this.clasedejugador = clasedejugador;
+    }
+
     
 
     

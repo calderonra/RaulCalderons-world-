@@ -32,9 +32,202 @@ public class ElMenu {
         int opcion = 8;
         int opcion2 = 8;
         String aux = player.getRaza();
-        if (aux == "Teutones") {
+        int saltin =player.getClasedejugador();
+        
+        if (aux == "Teutones" && saltin==1) {
 
             while (opcion != 7) {
+                opciones();
+                try {
+                    opcion = leer.nextInt();
+                    switch (opcion) {
+                        case 1:
+                            //
+                            break;
+                        case 2:
+                            Unidades.unidades.crearUnidad();
+                            Unidades.unidades.mostrarUnidades();
+                            break;
+                        case 3:
+                            //
+                            break;
+                        case 4:
+                            //
+                            break;
+                        case 5:
+                            //
+                            break;
+                        case 6:
+                            //
+                            break;
+                        case 7:
+                            //
+                            break;
+                        default:
+                            System.err.println("    Por favor ingrese una opción valida");
+                    }
+
+                } catch (Exception e) {
+                    System.err.println("ingrese numero por favor!");
+                    leer.nextLine();
+                }
+            }
+        }
+        else if(aux == "Mayas" && saltin==1){
+             while (opcion != 7) {
+                opciones();
+                try {
+                    opcion = leer.nextInt();
+                    switch (opcion) {
+                        case 1:
+                            //
+                            break;
+                        case 2:
+                            Unidades.unidades.crearUnidad();
+                            Unidades.unidades.mostrarUnidades();
+                            break;
+                        case 3:
+                            //
+                            break;
+                        case 4:
+                            //
+                            break;
+                        case 5:
+                            //
+                            break;
+                        case 6:
+                            //
+                            break;
+                        case 7:
+                            //
+                            break;
+                        default:
+                            System.err.println("    Por favor ingrese una opción valida");
+                    }
+
+                } catch (Exception e) {
+                    System.err.println("ingrese numero por favor!");
+                    leer.nextLine();
+                }
+            }
+            
+        }
+        else if(aux == "Persas" && saltin==1){
+             while (opcion != 7) {
+                opciones();
+                try {
+                    opcion = leer.nextInt();
+                    switch (opcion) {
+                        case 1:
+                            //
+                            break;
+                        case 2:
+                            Unidades.unidades.crearUnidad();
+                            Unidades.unidades.mostrarUnidades();
+                            break;
+                        case 3:
+                            //
+                            break;
+                        case 4:
+                            //
+                            break;
+                        case 5:
+                            //
+                            break;
+                        case 6:
+                            //
+                            break;
+                        case 7:
+                            //
+                            break;
+                        default:
+                            System.err.println("    Por favor ingrese una opción valida");
+                    }
+
+                } catch (Exception e) {
+                    System.err.println("ingrese numero por favor!");
+                    leer.nextLine();
+                }
+            }
+        }
+        else if(aux == "Teutones" && saltin==2){
+             while (opcion != 7) {
+                opciones();
+                try {
+                    opcion = leer.nextInt();
+                    switch (opcion) {
+                        case 1:
+                            //
+                            break;
+                        case 2:
+                            Unidades.unidades.crearUnidad();
+                            Unidades.unidades.mostrarUnidades();
+                            break;
+                        case 3:
+                            //
+                            break;
+                        case 4:
+                            //
+                            break;
+                        case 5:
+                            //
+                            break;
+                        case 6:
+                            //
+                            break;
+                        case 7:
+                            //
+                            break;
+                        default:
+                            System.err.println("    Por favor ingrese una opción valida");
+                    }
+
+                } catch (Exception e) {
+                    System.err.println("ingrese numero por favor!");
+                    leer.nextLine();
+                }
+            }
+        }
+        else if (aux == "Mayas" && saltin==2){
+             while (opcion != 7) {
+                opciones();
+                try {
+                    opcion = leer.nextInt();
+                    switch (opcion) {
+                        case 1:
+                            //
+                            break;
+                        case 2:
+                            Unidades.unidades.crearUnidad();
+                            Unidades.unidades.mostrarUnidades();
+                            break;
+                        case 3:
+                            //
+                            break;
+                        case 4:
+                            //
+                            break;
+                        case 5:
+                            //
+                            break;
+                        case 6:
+                            //
+                            break;
+                        case 7:
+                            //
+                            break;
+                        default:
+                            System.err.println("    Por favor ingrese una opción valida");
+                    }
+
+                } catch (Exception e) {
+                    System.err.println("ingrese numero por favor!");
+                    leer.nextLine();
+                }
+            }
+        }
+        else if (aux == "Persas" && saltin==2){
+             while (opcion != 7) {
                 opciones();
                 try {
                     opcion = leer.nextInt();

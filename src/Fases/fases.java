@@ -29,8 +29,8 @@ public class fases {
 
         for (int i = 0; i < limitedefase; i++) {
             int flag = 0;
-            player1.setEstado(true);
-            player2.setEstado(false);
+            player1.setClasedejugador(1);
+            player2.setClasedejugador(2);
             
             while (flag != 1) {
                 if (i == 0) {
