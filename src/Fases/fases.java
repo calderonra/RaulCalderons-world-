@@ -7,7 +7,6 @@ package Fases;
 
 import Jugador.Jugador;
 import Menu.ElMenu;
-import Menu.ElMenu2;
 import Menu.ElMenuDeRazas;
 import Menu.ElMenuDeRazas2;
 
@@ -21,7 +20,6 @@ public class fases {
     ElMenuDeRazas n = new ElMenuDeRazas();
     ElMenu menu = new ElMenu();
     ElMenuDeRazas2 n2 = new ElMenuDeRazas2();
-    ElMenu2 menu2 = new ElMenu2();
     public static Jugador player1 = new Jugador();
     public static Jugador player2 = new Jugador();
 
@@ -47,7 +45,7 @@ public class fases {
                     System.out.println("Turno del jugador 1");
                     menu.menu(player1);
                     System.out.println("Turno del jugador 2");
-                    menu2.menu();
+                    menu.menu(player2);
                     flag = 1;
                 }
 
