@@ -46,7 +46,9 @@ public class ElMenu {
                             break;
                         case 2:
                             Unidades.unidades.crearUnidad();
+                            Unidades.unidades.modificarUnidadesTeutones();
                             Unidades.unidades.mostrarUnidades();
+                            
                             break;
                         case 3:
                             //
@@ -84,6 +86,7 @@ public class ElMenu {
                             break;
                         case 2:
                             Unidades.unidades.crearUnidad();
+                            Unidades.unidades.modificarUnidadesMaya();
                             Unidades.unidades.mostrarUnidades();
                             break;
                         case 3:
@@ -123,6 +126,7 @@ public class ElMenu {
                             break;
                         case 2:
                             Unidades.unidades.crearUnidad();
+                            Unidades.unidades.modificarUnidadesPersa();
                             Unidades.unidades.mostrarUnidades();
                             break;
                         case 3:
@@ -160,8 +164,9 @@ public class ElMenu {
                             //
                             break;
                         case 2:
-                            Unidades.unidades.crearUnidad();
-                            Unidades.unidades.mostrarUnidades();
+                            Unidades.unidades.crearUnidad2();
+                            Unidades.unidades.modificarUnidadesTeutones2();
+                            Unidades.unidades.mostrarUnidades2();
                             break;
                         case 3:
                             //
@@ -198,8 +203,9 @@ public class ElMenu {
                             //
                             break;
                         case 2:
-                            Unidades.unidades.crearUnidad();
-                            Unidades.unidades.mostrarUnidades();
+                            Unidades.unidades.crearUnidad2();
+                            Unidades.unidades.modificarUnidadesMaya2();
+                            Unidades.unidades.mostrarUnidades2();
                             break;
                         case 3:
                             //
@@ -236,8 +242,9 @@ public class ElMenu {
                             //
                             break;
                         case 2:
-                            Unidades.unidades.crearUnidad();
-                            Unidades.unidades.mostrarUnidades();
+                            Unidades.unidades.crearUnidad2();
+                            Unidades.unidades.modificarUnidadesPersa2();
+                            Unidades.unidades.mostrarUnidades2();
                             break;
                         case 3:
                             //

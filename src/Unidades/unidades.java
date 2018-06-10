@@ -17,7 +17,7 @@ public class unidades {
     public static ArrayList<unidad> tropas1 = new ArrayList<>();
     public static ArrayList<unidad> tropas2 = new ArrayList<>();
 
-    public static void iniciarUnidades(razas raza) {
+    public static void iniciarUnidades() {
         tropas1.add(new unidad("soldado", 0, 0, 0, 0));
         tropas1.add(new unidad("soldado", 0, 0, 0, 0));
     }
