@@ -27,6 +27,7 @@ public class ElMenuDeRazas {
 
     public String menuR(Jugador jugador) {
         Scanner leer = new Scanner(System.in);
+        FabricaAbs fabrica = FabricadeFabricas.getfabrica("razas");
         int opcion = 5;
         int opcion2 = 5;
         String aux1="";
@@ -36,9 +37,11 @@ public class ElMenuDeRazas {
                 opcion = leer.nextInt();
                 switch (opcion) {
                     case 1:
-                        System.out.println("Seleccionaste a los teutones! :0");
-                        aux1="Teutones";
+                        System.out.println("Seleccionaste a los teutones! 0:");
+                        razas teutones = fabrica.getraza("Persas");
+                        teutones.crearRaza(jugador);
                         opcion=4;
+                        aux1="Persas";
                         break;
           
                     case 2:
@@ -48,7 +51,7 @@ public class ElMenuDeRazas {
                         break;
                     case 3:
                         System.out.println("Seleccionaste a los persas :0");
-                        FabricaAbs fabrica = FabricadeFabricas.getfabrica("razas");
+                        
                         razas persa = fabrica.getraza("Persas");
                         persa.crearRaza(jugador);
                         opcion=4;

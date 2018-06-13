@@ -84,7 +84,10 @@ public class Jugador {
         this.clasedejugador = clasedejugador;
     }
 
-    
+    @Override
+    public String toString(){
+      return "Vida"+vida+"Oro: "+oro+"Madera:"+madera+"Piedra"+piedra;  
+    }
 
     
 }

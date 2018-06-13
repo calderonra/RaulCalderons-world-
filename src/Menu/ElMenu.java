@@ -35,6 +35,7 @@ public class ElMenu {
         int opcion2 = 10;
         String aux = player.getRaza();
         int saltin =player.getClasedejugador();
+        System.out.println(player.toString());
         
         if (aux == "Teutones" && saltin==1) {
 
@@ -44,13 +45,14 @@ public class ElMenu {
                     opcion = leer.nextInt();
                     switch (opcion) {
                         case 1:
-                            //
+                               Estructuras.MetodosDeEstructura.agregarEstructura();
+                            Estructuras.MetodosDeEstructura.seteos(player);
+                            
                             break;
                         case 2:
                             Unidades.unidades.CrearUnidadesTeutones();
                             
-                            Unidades.unidades.mostrarUnidades();
-                            
+                            Unidades.unidades.mostrarUnidades();                            
                             break;
                         case 3:
                             //
@@ -70,9 +72,7 @@ public class ElMenu {
                             Unidades.unidades.mostrar();
                             break;
                         case 8:
-                            Estructuras.MetodosDeEstructura.agregarEstructura();
-                            
-                            Estructuras.MetodosDeEstructura.seteos(player);
+                         
                             break;
                         case 9:
                             

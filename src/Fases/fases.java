@@ -43,6 +43,7 @@ public class fases {
                     flag = 1;
                 } else {
                     System.out.println("Turno del jugador 1");
+                    System.out.println();
                     Estructuras.MetodosDeEstructura.seteos(player1);
                     menu.menu(player1);
                     System.out.println("Turno del jugador 2");
