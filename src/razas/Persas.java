@@ -5,6 +5,8 @@
  */
 package razas;
 
+import Jugador.Jugador;
+
 /**
  *
  * @author Raul Calderon
@@ -12,8 +14,12 @@ package razas;
 public class Persas implements razas {
 
     @Override
-    public void crearRaza() {
-        //Unidades.unidades.iniciarUnidades();
-        //Unidades.unidades.modificarUnidadesPersa();
+    public void crearRaza(Jugador jugador) {
+        jugador.setOro(100);
+        jugador.setMadera(100);
+        jugador.setVida(1000);
+        jugador.setPiedra(100);
     }
+
+    
 }

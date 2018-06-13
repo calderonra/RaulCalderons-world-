@@ -5,6 +5,8 @@
  */
 package razas;
 
+import Jugador.Jugador;
+
 /**
  *
  * @author Raul Calderon
@@ -12,11 +14,13 @@ package razas;
 public class Mayas implements razas {
 
     @Override
-    public void crearRaza() {
-
-        //Unidades.unidades.iniciarUnidades();
-        //Unidades.unidades.mostrarUnidades();
-        //Unidades.unidades.modificarUnidadesMaya();
+    public void crearRaza(Jugador jugador) {
+        jugador.setOro(100);
+        jugador.setMadera(100);
+        jugador.setVida(1000);
+        jugador.setPiedra(100);
     }
+
+    
 
 }

@@ -37,7 +37,7 @@ public class fases {
                    player1.setRaza(aux);
                     System.out.println("la raza es"+player1.raza);
                     System.out.println("Jugador 2 Seleccione su Raza :0");
-                    String aux1=n2.menuR();
+                    String aux1=n2.menuR(player2);
                    player2.setRaza(aux1);
                     System.out.println(player2.raza);
                     flag = 1;
