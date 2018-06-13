@@ -33,7 +33,7 @@ public class fases {
             while (flag != 1) {
                 if (i == 0) {
                     System.out.println("Jugador 1 Seleccione su Raza :0");
-                    String aux=n.menuR();
+                    String aux=n.menuR(player1);
                    player1.setRaza(aux);
                     System.out.println("la raza es"+player1.raza);
                     System.out.println("Jugador 2 Seleccione su Raza :0");

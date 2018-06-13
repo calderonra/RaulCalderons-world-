@@ -5,11 +5,13 @@
  */
 package razas;
 
+import Jugador.Jugador;
+
 /**
  *
  * @author Raul Calderon <https://github.com/calderonra>
  */
 public interface razas {
-    void crearRaza();
+    void crearRaza(Jugador jugador);
     
 }

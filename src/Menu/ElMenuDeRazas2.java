@@ -5,6 +5,7 @@
  */
 package Menu;
 
+import Jugador.Jugador;
 import fabricas.FabricaAbs;
 import fabricas.FabricadeFabricas;
 import java.util.Scanner;
@@ -23,7 +24,7 @@ public class ElMenuDeRazas2 {
         System.out.println("3. Persas");
         System.out.println("ingresa el numero por favor: ");
     }
-public String menuR() {
+public String menuR(Jugador jugador) {
         Scanner leer = new Scanner(System.in);
         int opcion = 5;
         int opcion2 = 5;
@@ -48,7 +49,7 @@ public String menuR() {
                         System.out.println("Seleccionaste a los persas :0");
                         FabricaAbs fabrica = FabricadeFabricas.getfabrica("razas");
                         razas persa = fabrica.getraza("Persas");
-                        persa.crearRaza();
+                        persa.crearRaza(jugador);
                         opcion=4;
                        // ElMenu menu =new ElMenu();
                         //menu.menu();
