@@ -29,30 +29,32 @@ public String menuR(Jugador jugador) {
         int opcion = 5;
         int opcion2 = 5;
         String aux1="";
+        FabricaAbs fabrica = FabricadeFabricas.getfabrica("razas");
         while (opcion != 4) {
             opciones();
             try {
                 opcion = leer.nextInt();
                 switch (opcion) {
                     case 1:
-                        System.out.println("Seleccionaste a los teutones! :0");
-                        aux1="Teutones";
+                        System.out.println("Seleccionaste a los teutones! 0:");                        
+                        razas teutones = fabrica.getraza("Teutones");
+                        teutones.crearRaza(jugador);
+                        aux1= "Teutones";
                         opcion=4;
                         break;
           
                     case 2:
-                        System.out.println("Seleccionaste a los mayas! 0:");
+                        System.out.println("Seleccionaste a los mayas! 0:");                        
+                        razas maya = fabrica.getraza("Mayas");
+                        maya.crearRaza(jugador);
                         aux1= "Maya";
                         opcion=4;
                         break;
                     case 3:
                         System.out.println("Seleccionaste a los persas :0");
-                        FabricaAbs fabrica = FabricadeFabricas.getfabrica("razas");
                         razas persa = fabrica.getraza("Persas");
                         persa.crearRaza(jugador);
                         opcion=4;
-                       // ElMenu menu =new ElMenu();
-                        //menu.menu();
                         aux1="Persas";
                         break;
                     default:

@@ -14,14 +14,21 @@ public class estructura {
     public int vida;
     public int fase;
     public int costo;
+    public int recursosAdar;
 
-    public estructura(String nombre, int vida, int fase, int costo) {
+    public estructura() {
+    }
+
+    public estructura(String nombre, int vida, int fase, int costo, int recursosAdar) {
         this.nombre = nombre;
         this.vida = vida;
         this.fase = fase;
         this.costo = costo;
+        this.recursosAdar = recursosAdar;
     }
 
+    
+    
     public String getNombre() {
         return nombre;
     }
@@ -53,7 +60,16 @@ public class estructura {
     public void setCosto(int costo) {
         this.costo = costo;
     }
+
+    public int getRecursosAdar() {
+        return recursosAdar;
+    }
+
+    public void setRecursosAdar(int recursosAdar) {
+        this.recursosAdar = recursosAdar;
+    }
     
+
     @Override 
             public String toString(){
                 return "nombre:  "+nombre+ "vida: "+ vida+ "\nataque: ";

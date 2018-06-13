@@ -170,5 +170,23 @@ public class unidades {
        }
         
     }
-    
+     public static void ataque2(){
+       int vidafinal=0;
+        
+       int aux=tropas2.get(0).getVida();
+       int atk1=tropas2.get(0).getAtk();
+       int aux2=tropas1.get(0).getVida();
+        System.out.println("Tus puntos de ataque: "+atk1);
+       System.out.println("vida del enemigo: "+aux2);
+       
+       vidafinal=aux2-atk1;
+        System.out.println("La vida que va a quedar el enemigo es de:"+vidafinal);
+       if (vidafinal<=0){
+           tropas1.remove(0);
+       }
+       else if (vidafinal>0){
+           tropas2.get(0).setVida(vidafinal);
+           System.out.println("atacando al soldado");
+       }
+     }
 }

@@ -23,21 +23,22 @@ public class ElMenu {
         System.out.println("5. Crear vehiculos ");
         System.out.println("6. Crear vehiculos ");
         System.out.println("7. Mostrar tus soldados ");
-        System.out.println("8. Finalizar turno");
+        System.out.println("8. Crear estructuras de recursos ");
+        System.out.println("9. Finalizar turno");
         System.out.print(": ");
     }
 
     public void menu(Jugador player) {
 
         Scanner leer = new Scanner(System.in);
-        int opcion = 9;
-        int opcion2 = 9;
+        int opcion = 10;
+        int opcion2 = 10;
         String aux = player.getRaza();
         int saltin =player.getClasedejugador();
         
         if (aux == "Teutones" && saltin==1) {
 
-            while (opcion != 8) {
+            while (opcion != 9) {
                 opciones();
                 try {
                     opcion = leer.nextInt();
@@ -69,6 +70,12 @@ public class ElMenu {
                             Unidades.unidades.mostrar();
                             break;
                         case 8:
+                            Estructuras.MetodosDeEstructura.agregarEstructura();
+                            
+                            Estructuras.MetodosDeEstructura.seteos(player);
+                            break;
+                        case 9:
+                            
                             break;
                         default:
                             System.err.println("    Por favor ingrese una opción valida");

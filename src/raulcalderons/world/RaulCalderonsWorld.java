@@ -24,9 +24,7 @@ public class RaulCalderonsWorld {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
         fases fases = new fases();
         fases.inicio();
-
     }
 }
