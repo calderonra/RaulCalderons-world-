@@ -21,43 +21,41 @@ public class ElMenu {
         System.out.println("3. Atacar unidades enemigas");
         System.out.println("4. Aplicar mejoras");
         System.out.println("5. Crear vehiculos ");
-        System.out.println("6. Crear vehiculos ");
         System.out.println("7. Mostrar tus soldados ");
-        System.out.println("8. Crear estructuras de recursos ");
-        System.out.println("9. Finalizar turno");
+        System.out.println("8. Finalizar turno");
         System.out.print(": ");
     }
 
     public void menu(Jugador player) {
 
         Scanner leer = new Scanner(System.in);
-        int opcion = 10;
-        int opcion2 = 10;
+        int opcion = 9;
+        int opcion2 = 9;
         String aux = player.getRaza();
-        int saltin =player.getClasedejugador();
+        int saltin = player.getClasedejugador();
         System.out.println(player.toString());
-        
-        if (aux == "Teutones" && saltin==1) {
+        System.out.println(aux);
+        if (aux.equalsIgnoreCase("Teutones") && saltin == 1) {
 
-            while (opcion != 9) {
+            while (opcion != 8) {
                 opciones();
                 try {
                     opcion = leer.nextInt();
                     switch (opcion) {
                         case 1:
-                               Estructuras.MetodosDeEstructura.agregarEstructura();
+                            Estructuras.MetodosDeEstructura.agregarEstructura();
                             Estructuras.MetodosDeEstructura.seteos(player);
-                            
+
                             break;
                         case 2:
                             Unidades.unidades.CrearUnidadesTeutones();
-                            
-                            Unidades.unidades.mostrarUnidades();                            
+
+                            Unidades.unidades.mostrarUnidades();
                             break;
                         case 3:
                             //
                             Unidades.unidades.ataque1();
-                            
+
                             break;
                         case 4:
                             //
@@ -72,10 +70,7 @@ public class ElMenu {
                             Unidades.unidades.mostrar();
                             break;
                         case 8:
-                         
-                            break;
-                        case 9:
-                            
+
                             break;
                         default:
                             System.err.println("    Por favor ingrese una opción valida");
@@ -86,23 +81,23 @@ public class ElMenu {
                     leer.nextLine();
                 }
             }
-        }
-        else if(aux == "Mayas" && saltin==1){
-             while (opcion != 7) {
+        } else if (aux.equalsIgnoreCase("Mayas") && saltin == 1) {
+            while (opcion != 8) {
                 opciones();
                 try {
                     opcion = leer.nextInt();
                     switch (opcion) {
                         case 1:
-                            //
+
+                            Estructuras.MetodosDeEstructura.agregarEstructura();
+                            Estructuras.MetodosDeEstructura.seteos(player);
                             break;
                         case 2:
-                            
-                            
-                            Unidades.unidades.mostrarUnidades();
+
+                            Unidades.unidades.CrearUnidadesMaya();
                             break;
                         case 3:
-                            //
+                            Unidades.unidades.ataque1();
                             break;
                         case 4:
                             //
@@ -114,7 +109,9 @@ public class ElMenu {
                             //
                             break;
                         case 7:
-                            //
+                            Unidades.unidades.mostrarUnidades();
+                            break;
+                        case 8:
                             break;
                         default:
                             System.err.println("    Por favor ingrese una opción valida");
@@ -125,22 +122,23 @@ public class ElMenu {
                     leer.nextLine();
                 }
             }
-            
-        }
-        else if(aux == "Persas" && saltin==1){
-             while (opcion != 7) {
+
+        } else if (aux.equalsIgnoreCase("Persas") && saltin == 1) {
+            while (opcion != 8) {
                 opciones();
                 try {
                     opcion = leer.nextInt();
                     switch (opcion) {
                         case 1:
-                            //
+
+                            Estructuras.MetodosDeEstructura.agregarEstructura();
+                            Estructuras.MetodosDeEstructura.seteos(player);
                             break;
                         case 2:
-                            Unidades.unidades.mostrarUnidades();
+                            Unidades.unidades.crearUnidadPersa();
                             break;
                         case 3:
-                            //
+                            Unidades.unidades.ataque1();
                             break;
                         case 4:
                             //
@@ -152,7 +150,9 @@ public class ElMenu {
                             //
                             break;
                         case 7:
-                            //
+                            Unidades.unidades.mostrarUnidades();
+                            break;
+                        case 8:
                             break;
                         default:
                             System.err.println("    Por favor ingrese una opción valida");
@@ -163,23 +163,23 @@ public class ElMenu {
                     leer.nextLine();
                 }
             }
-        }
-        else if(aux == "Teutones" && saltin==2){
-             while (opcion != 7) {
+        } else if (aux.equalsIgnoreCase("Teutones") && saltin == 2) {
+            while (opcion != 8) {
                 opciones();
                 try {
                     opcion = leer.nextInt();
                     switch (opcion) {
                         case 1:
-                            //
+
+                            Estructuras.MetodosDeEstructura.agregarEstructura();
+                            Estructuras.MetodosDeEstructura.seteos(player);
                             break;
                         case 2:
-                            Unidades.unidades.crearUnidad2();
-                            //Unidades.unidades.modificarUnidadesTeutones2();
+                            Unidades.unidades.crearUnidadTeuton2();
                             Unidades.unidades.mostrarUnidades2();
                             break;
                         case 3:
-                            //
+                            Unidades.unidades.ataque2();
                             break;
                         case 4:
                             //
@@ -191,34 +191,35 @@ public class ElMenu {
                             //
                             break;
                         case 7:
-                            //
-                            break;
-                        default:
-                            System.err.println("    Por favor ingrese una opción valida");
-                    }
-
-                } catch (Exception e) {
-                    System.err.println("ingrese numero por favor!");
-                    leer.nextLine();
-                }
-            }
-        }
-        else if (aux == "Mayas" && saltin==2){
-             while (opcion != 7) {
-                opciones();
-                try {
-                    opcion = leer.nextInt();
-                    switch (opcion) {
-                        case 1:
-                            //
-                            break;
-                        case 2:
-                            Unidades.unidades.crearUnidad2();
-                            //Unidades.unidades.modificarUnidadesMaya2();
                             Unidades.unidades.mostrarUnidades2();
                             break;
+                        case 8:
+                            break;
+                        default:
+                            System.err.println("    Por favor ingrese una opción valida");
+                    }
+
+                } catch (Exception e) {
+                    System.err.println("ingrese numero por favor!");
+                    leer.nextLine();
+                }
+            }
+        } else if (aux.equalsIgnoreCase("Mayas") && saltin == 2) {
+            while (opcion != 8) {
+                opciones();
+                try {
+                    opcion = leer.nextInt();
+                    switch (opcion) {
+                        case 1:
+
+                            Estructuras.MetodosDeEstructura.agregarEstructura();
+                            Estructuras.MetodosDeEstructura.seteos(player);
+                            break;
+                        case 2:
+                           Unidades.unidades.crearUnidadMaya2();
+                            break;
                         case 3:
-                            //
+                           Unidades.unidades.ataque2();
                             break;
                         case 4:
                             //
@@ -230,7 +231,9 @@ public class ElMenu {
                             //
                             break;
                         case 7:
-                            //
+                            Unidades.unidades.mostrarUnidades2();
+                            break;
+                        case 8:
                             break;
                         default:
                             System.err.println("    Por favor ingrese una opción valida");
@@ -241,21 +244,22 @@ public class ElMenu {
                     leer.nextLine();
                 }
             }
-        }
-        else if (aux == "Persas" && saltin==2){
-             while (opcion != 8) {
+        } else if (aux.equalsIgnoreCase("Persas") && saltin == 2) {
+            while (opcion != 8) {
                 opciones();
                 try {
                     opcion = leer.nextInt();
                     switch (opcion) {
                         case 1:
-                            //
+
+                            Estructuras.MetodosDeEstructura.agregarEstructura();
+                            Estructuras.MetodosDeEstructura.seteos(player);
                             break;
                         case 2:
                             Unidades.unidades.crearUnidadPersa2();
                             break;
                         case 3:
-                            //
+                            Unidades.unidades.ataque2();
                             break;
                         case 4:
                             //
@@ -269,9 +273,9 @@ public class ElMenu {
                         case 7:
                             Unidades.unidades.mostrarUnidades2();
                             break;
-                            
+
                         case 8:
-                           
+
                             break;
                         default:
                             System.err.println("    Por favor ingrese una opción valida");

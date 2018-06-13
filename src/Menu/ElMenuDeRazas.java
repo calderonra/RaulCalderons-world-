@@ -41,11 +41,13 @@ public class ElMenuDeRazas {
                         razas teutones = fabrica.getraza("Persas");
                         teutones.crearRaza(jugador);
                         opcion=4;
-                        aux1="Persas";
+                        aux1="teutones";
                         break;
           
                     case 2:
                         System.out.println("Seleccionaste a los mayas! 0:");
+                        razas mayas=fabrica.getraza("Mayas");
+                        mayas.crearRaza(jugador);
                         aux1= "Maya";
                         opcion=4;
                         break;

@@ -50,7 +50,7 @@ public class MetodosDeEstructura {
         int saltin;
         for(i=1;i<edificios.size();i++){
            aux=edificios.get(i).getNombre();
-           if(aux.equals("Mina de oro")){
+           if(aux.equalsIgnoreCase("Mina de oro")){
                aux2=edificios.get(i).getRecursosAdar();
                System.out.println(aux2);
                System.out.println(jugador.getOro());
@@ -61,13 +61,13 @@ public class MetodosDeEstructura {
                
                
            }
-           else if(aux.equals("Mina de piedra")){
+           else if(aux.equalsIgnoreCase("Mina de piedra")){
                aux2=edificios.get(i).getRecursosAdar();
                saltin=jugador.getPiedra();
                jugador.setPiedra(saltin);
                System.out.println("Recursos aumentados");
            }
-           else if (aux.equals("Mina de madera")){
+           else if (aux.equalsIgnoreCase("Mina de madera")){
                aux2=edificios.get(i).getRecursosAdar();
                saltin=jugador.getMadera();
                jugador.setMadera(saltin);

@@ -5,6 +5,7 @@
  */
 package fabricas;
 
+
 import razas.razas;
 
 /**
@@ -13,4 +14,5 @@ import razas.razas;
  */
 public interface FabricaAbs {
     razas getraza(String type);
+    
 }
