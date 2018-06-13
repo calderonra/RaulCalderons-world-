@@ -13,7 +13,7 @@ public class Persas implements razas {
 
     @Override
     public void crearRaza() {
-        Unidades.unidades.iniciarUnidades();
-        Unidades.unidades.modificarUnidadesPersa();
+        //Unidades.unidades.iniciarUnidades();
+        //Unidades.unidades.modificarUnidadesPersa();
     }
 }

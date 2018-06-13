@@ -22,21 +22,22 @@ public class ElMenu {
         System.out.println("4. Aplicar mejoras");
         System.out.println("5. Crear vehiculos ");
         System.out.println("6. Crear vehiculos ");
-        System.out.println("7. Finalizar turno");
+        System.out.println("7. Mostrar tus soldados ");
+        System.out.println("8. Finalizar turno");
         System.out.print(": ");
     }
 
     public void menu(Jugador player) {
 
         Scanner leer = new Scanner(System.in);
-        int opcion = 8;
-        int opcion2 = 8;
+        int opcion = 9;
+        int opcion2 = 9;
         String aux = player.getRaza();
         int saltin =player.getClasedejugador();
         
         if (aux == "Teutones" && saltin==1) {
 
-            while (opcion != 7) {
+            while (opcion != 8) {
                 opciones();
                 try {
                     opcion = leer.nextInt();
@@ -45,14 +46,14 @@ public class ElMenu {
                             //
                             break;
                         case 2:
-                            Unidades.unidades.crearUnidad();
-                            Unidades.unidades.modificarUnidadesTeutones();
+                            Unidades.unidades.CrearUnidadesTeutones();
+                            
                             Unidades.unidades.mostrarUnidades();
                             
                             break;
                         case 3:
                             //
-                            Unidades.unidades.ataque();
+                            Unidades.unidades.ataque1();
                             
                             break;
                         case 4:
@@ -65,7 +66,9 @@ public class ElMenu {
                             //
                             break;
                         case 7:
-                            //
+                            Unidades.unidades.mostrar();
+                            break;
+                        case 8:
                             break;
                         default:
                             System.err.println("    Por favor ingrese una opción valida");
@@ -87,8 +90,8 @@ public class ElMenu {
                             //
                             break;
                         case 2:
-                            Unidades.unidades.crearUnidad();
-                            Unidades.unidades.modificarUnidadesMaya();
+                            
+                            
                             Unidades.unidades.mostrarUnidades();
                             break;
                         case 3:
@@ -127,8 +130,6 @@ public class ElMenu {
                             //
                             break;
                         case 2:
-                            Unidades.unidades.crearUnidad();
-                            Unidades.unidades.modificarUnidadesPersa();
                             Unidades.unidades.mostrarUnidades();
                             break;
                         case 3:
@@ -167,7 +168,7 @@ public class ElMenu {
                             break;
                         case 2:
                             Unidades.unidades.crearUnidad2();
-                            Unidades.unidades.modificarUnidadesTeutones2();
+                            //Unidades.unidades.modificarUnidadesTeutones2();
                             Unidades.unidades.mostrarUnidades2();
                             break;
                         case 3:
@@ -206,7 +207,7 @@ public class ElMenu {
                             break;
                         case 2:
                             Unidades.unidades.crearUnidad2();
-                            Unidades.unidades.modificarUnidadesMaya2();
+                            //Unidades.unidades.modificarUnidadesMaya2();
                             Unidades.unidades.mostrarUnidades2();
                             break;
                         case 3:
@@ -235,7 +236,7 @@ public class ElMenu {
             }
         }
         else if (aux == "Persas" && saltin==2){
-             while (opcion != 7) {
+             while (opcion != 8) {
                 opciones();
                 try {
                     opcion = leer.nextInt();
@@ -244,9 +245,7 @@ public class ElMenu {
                             //
                             break;
                         case 2:
-                            Unidades.unidades.crearUnidad2();
-                            Unidades.unidades.modificarUnidadesPersa2();
-                            Unidades.unidades.mostrarUnidades2();
+                            Unidades.unidades.crearUnidadPersa2();
                             break;
                         case 3:
                             //
@@ -261,7 +260,11 @@ public class ElMenu {
                             //
                             break;
                         case 7:
-                            //
+                            Unidades.unidades.mostrarUnidades2();
+                            break;
+                            
+                        case 8:
+                           
                             break;
                         default:
                             System.err.println("    Por favor ingrese una opción valida");

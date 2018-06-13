@@ -15,9 +15,9 @@ public class Teutones implements razas {
     public void crearRaza() {
         
         
-        Unidades.unidades.iniciarUnidades();
-       Unidades.unidades.mostrarUnidades();
-       Unidades.unidades.modificarUnidadesTeutones();
+       // Unidades.unidades.iniciarUnidades();
+       //Unidades.unidades.mostrarUnidades();
+       //1Unidades.unidades.modificarUnidadesTeutones();
     }
     
 }
