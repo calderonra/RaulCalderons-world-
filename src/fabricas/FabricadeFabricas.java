@@ -12,7 +12,7 @@ package fabricas;
 public class FabricadeFabricas {
     public static FabricaAbs getfabrica(String type){
         if(type.equalsIgnoreCase("razas")){
-            System.out.println("se hizo una fabrica de razas");
+            
             return new fabricaRazas();
         }
        

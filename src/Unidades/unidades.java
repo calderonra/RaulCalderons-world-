@@ -5,6 +5,7 @@
  */
 package Unidades;
 
+import Jugador.Jugador;
 import java.util.*;
 import razas.razas;
 
@@ -17,7 +18,9 @@ public class unidades {
     public static ArrayList<unidad> tropas1 = new ArrayList<>();
     public static ArrayList<unidad> tropas2 = new ArrayList<>();
 
-
+/**
+ * Con este metodo mostramos las unidades que posee el jugador, recorriendo el arraylist 
+ */
     public static void mostrarUnidades() {
         int i = 1;
         for (unidad u : tropas1) {
@@ -38,16 +41,23 @@ public class unidades {
 
 
     
-    public static void crearUnidadPersa() {
+    public static void crearUnidadPersa(Jugador player) {
+        int costo=0;
+        int aux=0;
+        int juga=0;
+        juga=
+                
+        aux=player.getMadera();
+         
         System.out.println("¿Que tipo de unidad desea crear? ");
         Scanner scan = new Scanner(System.in);
         String in = scan.nextLine();
-
-        if (in.equalsIgnoreCase("soldado")) {
-            //System.out.println("hola");
+        if (in.equalsIgnoreCase("soldado") ) {
+            aux=player.getMadera()-costo;
             tropas1.add(new unidad("soldado", 50, 50, 2, 10));
-        } else if (in.equalsIgnoreCase("super soldado")) {
-            tropas1.add(new unidad("HAHA SALU2", 10, 10, 10, 10));
+            player.setMadera(aux);
+        } else if (in.equalsIgnoreCase("super soldado")&& costo==100) {
+            tropas1.add(new unidad("ss", 100, 100,2, 100));
         }
     }
     

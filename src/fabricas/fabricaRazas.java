@@ -20,7 +20,7 @@ public class fabricaRazas implements FabricaAbs {
    
     @Override
     public razas getraza(String type) {
-        System.out.println("se entra a la fabrica de razas");
+        
         switch(type){
             case "Mayas":
                 return new Mayas();
