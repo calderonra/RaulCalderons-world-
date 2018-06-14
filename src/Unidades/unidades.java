@@ -17,6 +17,7 @@ public class unidades {
 
     public static ArrayList<unidad> tropas1 = new ArrayList<>();
     public static ArrayList<unidad> tropas2 = new ArrayList<>();
+    
 
 /**
  * Con este metodo mostramos las unidades que posee el jugador, recorriendo el arraylist 
@@ -42,50 +43,73 @@ public class unidades {
 
     
     public static void crearUnidadPersa(Jugador player) {
-        int costo=0;
+        CostoUnidades cs= new CostoUnidades();
+        cs.setCostosolados(10);
+        int costo=cs.getCostosolados();
         int aux=0;
         int juga=0;
-        juga=
+         
                 
         aux=player.getMadera();
          
         System.out.println("¿Que tipo de unidad desea crear? ");
         Scanner scan = new Scanner(System.in);
         String in = scan.nextLine();
-        if (in.equalsIgnoreCase("soldado") ) {
+        if (in.equalsIgnoreCase("soldado")&&aux>=costo ) {
             aux=player.getMadera()-costo;
             tropas1.add(new unidad("soldado", 50, 50, 2, 10));
             player.setMadera(aux);
         } else if (in.equalsIgnoreCase("super soldado")&& costo==100) {
             tropas1.add(new unidad("ss", 100, 100,2, 100));
         }
+        else if(in.equalsIgnoreCase("soldado")&&aux<=costo){
+            System.out.println("Recursos insuficientes :0!");
+                 
+        }
     }
     
     
     public static void CrearUnidadesMaya() {
+        
+        CostoUnidades cs= new CostoUnidades();
+        cs.setCostosolados(10);
+        int costo=cs.getCostosolados();
+        int aux=0;
+        int juga=0;
+        
        System.out.println("¿Que tipo de unidad desea crear? ");
         Scanner scan = new Scanner(System.in);
         String in = scan.nextLine();
 
-        if (in.equalsIgnoreCase("soldado")) {
-            //System.out.println("hola");
+        if (in.equalsIgnoreCase("soldado")&&aux>=costo) {
             tropas1.add(new unidad("soldado", 60, 30, 2, 10));
-        } else if (in.equalsIgnoreCase("super soldado")) {
+        } else if (in.equalsIgnoreCase("super soldado")&&aux>=costo) {
             tropas1.add(new unidad("HAHA SALU2", 10, 10, 10, 10));
+        }else if(in.equalsIgnoreCase("soldado")&&aux<=costo){
+            System.out.println("Recursos insuficientes :0!");
+                 
         }
     }
 
     
     public static void CrearUnidadesTeutones() {
+        CostoUnidades cs= new CostoUnidades();
+        cs.setCostosolados(10);
+        int costo=cs.getCostosolados();
+        int aux=0;
+        int juga=0;
        System.out.println("¿Que tipo de unidad desea crear? ");
         Scanner scan = new Scanner(System.in);
         String in = scan.nextLine();
 
-        if (in.equalsIgnoreCase("soldado")) {
-            //System.out.println("hola");
+        if (in.equalsIgnoreCase("soldado")&&aux>=costo) {
+            
             tropas1.add(new unidad("soldado", 40, 30, 2, 10));
-        } else if (in.equalsIgnoreCase("super soldado")) {
+        } else if (in.equalsIgnoreCase("super soldado")&&aux>=costo) {
             tropas1.add(new unidad("HAHA SALU2", 10, 10, 10, 10));
+        }else if(in.equalsIgnoreCase("soldado")&&aux<=costo){
+            System.out.println("Recursos insuficientes :0!");
+                 
         }
     }
 
@@ -108,54 +132,64 @@ public class unidades {
         }
     }
 
-    public static void crearUnidad2() {
-        System.out.println("¿Que tipo de unidad desea crear? ");
-        Scanner scan = new Scanner(System.in);
-        String in = scan.nextLine();
-
-        if (in.equalsIgnoreCase("soldado")) {
-            //System.out.println("hola");
-            tropas2.add(new unidad("", 0, 0, 0, 0));
-        } else if (in.equalsIgnoreCase("super soldado")) {
-            tropas2.add(new unidad("HAHA SALU2", 10, 10, 10, 10));
-        }
-
-    }
+    
     public static void crearUnidadMaya2() {
+        CostoUnidades cs= new CostoUnidades();
+        cs.setCostosolados(10);
+        int costo=cs.getCostosolados();
+        int aux=0;
+        int juga=0;
         System.out.println("¿Que tipo de unidad desea crear? ");
         Scanner scan = new Scanner(System.in);
         String in = scan.nextLine();
-        if (in.equalsIgnoreCase("soldado")) {
+        if (in.equalsIgnoreCase("soldado")&&aux>=costo) {
             //System.out.println("hola");
             tropas2.add(new unidad("soldado", 60, 30, 2, 10));
-        } else if (in.equalsIgnoreCase("super soldado")) {
+        } else if (in.equalsIgnoreCase("super soldado")&&aux>=costo) {
             tropas2.add(new unidad("HAHA SALU2", 10, 10, 10, 10));
+        }else if(in.equalsIgnoreCase("soldado")&&aux<=costo){
+            System.out.println("Recursos insuficientes :0!");
+                 
         }
 
     }
 
     public static void crearUnidadTeuton2() {
+        CostoUnidades cs= new CostoUnidades();
+        cs.setCostosolados(10);
+        int costo=cs.getCostosolados();
+        int aux=0;
+        int juga=0;
         System.out.println("¿Que tipo de unidad desea crear? ");
         Scanner scan = new Scanner(System.in);
         String in = scan.nextLine();
-        if (in.equalsIgnoreCase("soldado")) {
-            //System.out.println("hola");
+        if (in.equalsIgnoreCase("soldado")&&aux>=costo) {            
             tropas2.add(new unidad("soldado", 40, 30, 2, 10));
-        } else if (in.equalsIgnoreCase("super soldado")) {
+        } else if (in.equalsIgnoreCase("super soldado")&&aux>=costo) {
             tropas2.add(new unidad("HAHA SALU2", 10, 10, 10, 10));
+        }else if(in.equalsIgnoreCase("soldado")&&aux<=costo){
+            System.out.println("Recursos insuficientes :0!");
+                 
         }
 
     }
 
     public static void crearUnidadPersa2() {
+        CostoUnidades cs= new CostoUnidades();
+        cs.setCostosolados(10);
+        int costo=cs.getCostosolados();
+        int aux=0;
+        int juga=0;
         System.out.println("¿Que tipo de unidad desea crear? ");
         Scanner scan = new Scanner(System.in);
         String in = scan.nextLine();
-        if (in.equalsIgnoreCase("soldado")) {
-            //System.out.println("hola");
+        if (in.equalsIgnoreCase("soldado")&&aux>=costo) {
             tropas2.add(new unidad("soldado", 40, 30, 2, 10));
-        } else if (in.equalsIgnoreCase("super soldado")) {
+        } else if (in.equalsIgnoreCase("super soldado")&&aux>=costo) {
             tropas2.add(new unidad("HAHA SALU2", 10, 10, 10, 10));
+        }else if(in.equalsIgnoreCase("soldado")&&aux<=costo){
+            System.out.println("Recursos insuficientes :0!");
+                 
         }
 
     }

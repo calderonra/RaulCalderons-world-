@@ -57,8 +57,6 @@ public class ElMenuDeRazas {
                         razas persa = fabrica.getraza("Persas");
                         persa.crearRaza(jugador);
                         opcion=4;
-                       // ElMenu menu =new ElMenu();
-                        //menu.menu();
                         aux1="Persas";
                         break;
                     default:
