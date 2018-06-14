@@ -15,10 +15,12 @@ public class Teutones implements razas {
 
     @Override
     public void crearRaza(Jugador jugador) {
+        System.out.println("SETEOS INICIALES ");
         jugador.setOro(100);
         jugador.setMadera(100);
         jugador.setVida(1000);
         jugador.setPiedra(100);
+        
     }
     
 }

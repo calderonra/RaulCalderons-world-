@@ -70,7 +70,7 @@ public class ElMenu {
                             Unidades.unidades.mostrar();
                             break;
                         case 8:
-
+                            System.out.println("Saliendo del menu");
                             break;
                         default:
                             System.err.println("    Por favor ingrese una opción valida");
@@ -112,6 +112,7 @@ public class ElMenu {
                             Unidades.unidades.mostrarUnidades();
                             break;
                         case 8:
+                            System.out.println("Saliendo del menu");
                             break;
                         default:
                             System.err.println("    Por favor ingrese una opción valida");
@@ -153,6 +154,7 @@ public class ElMenu {
                             Unidades.unidades.mostrarUnidades();
                             break;
                         case 8:
+                            System.out.println("Saliendo del menu");
                             break;
                         default:
                             System.err.println("    Por favor ingrese una opción valida");
@@ -194,6 +196,7 @@ public class ElMenu {
                             Unidades.unidades.mostrarUnidades2();
                             break;
                         case 8:
+                            System.out.println("saliendo del menu");
                             break;
                         default:
                             System.err.println("    Por favor ingrese una opción valida");
@@ -216,10 +219,10 @@ public class ElMenu {
                             Estructuras.MetodosDeEstructura.seteos(player);
                             break;
                         case 2:
-                           Unidades.unidades.crearUnidadMaya2(player);
+                            Unidades.unidades.crearUnidadMaya2(player);
                             break;
                         case 3:
-                           Unidades.unidades.ataque2();
+                            Unidades.unidades.ataque2();
                             break;
                         case 4:
                             //
@@ -234,8 +237,10 @@ public class ElMenu {
                             Unidades.unidades.mostrarUnidades2();
                             break;
                         case 8:
+                            System.out.println("Saliendo del menu");
                             break;
                         default:
+
                             System.err.println("    Por favor ingrese una opción valida");
                     }
 
@@ -275,7 +280,7 @@ public class ElMenu {
                             break;
 
                         case 8:
-
+                            System.out.println("Saliendo del menu");
                             break;
                         default:
                             System.err.println("    Por favor ingrese una opción valida");

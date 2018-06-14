@@ -46,7 +46,7 @@ public class fases {
                     System.out.println();
                     Estructuras.MetodosDeEstructura.seteos(player1);
                     menu.menu(player1);
-                    System.out.println("Turno del jugador 2");
+                    System.out.println("Turno del jugador 2");                    
                     menu.menu(player2);
                     Estructuras.MetodosDeEstructura.seteos(player2);
                     flag = 1;
@@ -60,11 +60,5 @@ public class fases {
 
     }
 
-    public Jugador getJugador() {
-        if (player1.isEstado() == true) {
-            return player1;
-        } else {
-            return player2;
-        }
-    }
+    
 }

@@ -86,7 +86,7 @@ public class Jugador {
 
     @Override
     public String toString(){
-      return "Vida"+vida+"Oro: "+oro+"Madera:"+madera+"Piedra"+piedra;  
+      return "Vida:"+vida+"\n Oro: "+oro+"\n Madera:"+madera+"\n Piedra"+piedra;  
     }
 
     

@@ -15,10 +15,11 @@ public class Persas implements razas {
 
     @Override
     public void crearRaza(Jugador jugador) {
-        jugador.setOro(100);
-        jugador.setMadera(100);
+        System.out.println("SETEOS INICIALES ");
+        jugador.setOro(400);
+        jugador.setMadera(500);
         jugador.setVida(1000);
-        jugador.setPiedra(100);
+        jugador.setPiedra(300);
     }
 
     

@@ -5,6 +5,7 @@
  */
 package Estructuras;
 import Jugador.Jugador;
+import Unidades.CostoUnidades;
 import java.util.*;
 /**
  *
@@ -44,6 +45,9 @@ public class MetodosDeEstructura {
         }
     }
     public static void  seteos(Jugador jugador){
+        CostoUnidades cs= new CostoUnidades();
+        cs.setCostoestructura(100);
+        int costo=cs.getCostoestructura();
         int i=0;
         String aux;
         int aux2;
@@ -65,13 +69,13 @@ public class MetodosDeEstructura {
                aux2=edificios.get(i).getRecursosAdar();
                saltin=jugador.getPiedra();
                jugador.setPiedra(saltin);
-               System.out.println("Recursos aumentados");
+               System.out.println("Recursos aumentados"+saltin);
            }
            else if (aux.equalsIgnoreCase("Mina de madera")){
                aux2=edificios.get(i).getRecursosAdar();
                saltin=jugador.getMadera();
                jugador.setMadera(saltin);
-               System.out.println("Recursos aumentados");
+               System.out.println("Recursos aumentados"+saltin);
            }
         }
     }
