@@ -69,14 +69,14 @@ public class unidades {
     }
     
     
-    public static void CrearUnidadesMaya() {
+    public static void CrearUnidadesMaya(Jugador player) {
         
         CostoUnidades cs= new CostoUnidades();
         cs.setCostosolados(10);
         int costo=cs.getCostosolados();
         int aux=0;
         int juga=0;
-        
+        aux=player.getMadera();
        System.out.println("¿Que tipo de unidad desea crear? ");
         Scanner scan = new Scanner(System.in);
         String in = scan.nextLine();
@@ -92,12 +92,13 @@ public class unidades {
     }
 
     
-    public static void CrearUnidadesTeutones() {
+    public static void CrearUnidadesTeutones(Jugador player) {
         CostoUnidades cs= new CostoUnidades();
         cs.setCostosolados(10);
         int costo=cs.getCostosolados();
         int aux=0;
         int juga=0;
+        aux=player.getMadera();
        System.out.println("¿Que tipo de unidad desea crear? ");
         Scanner scan = new Scanner(System.in);
         String in = scan.nextLine();
@@ -133,12 +134,13 @@ public class unidades {
     }
 
     
-    public static void crearUnidadMaya2() {
+    public static void crearUnidadMaya2(Jugador player) {
         CostoUnidades cs= new CostoUnidades();
         cs.setCostosolados(10);
         int costo=cs.getCostosolados();
         int aux=0;
         int juga=0;
+        aux=player.getMadera();
         System.out.println("¿Que tipo de unidad desea crear? ");
         Scanner scan = new Scanner(System.in);
         String in = scan.nextLine();
@@ -154,12 +156,13 @@ public class unidades {
 
     }
 
-    public static void crearUnidadTeuton2() {
+    public static void crearUnidadTeuton2(Jugador player) {
         CostoUnidades cs= new CostoUnidades();
         cs.setCostosolados(10);
         int costo=cs.getCostosolados();
         int aux=0;
         int juga=0;
+        aux=player.getMadera();
         System.out.println("¿Que tipo de unidad desea crear? ");
         Scanner scan = new Scanner(System.in);
         String in = scan.nextLine();
@@ -174,12 +177,13 @@ public class unidades {
 
     }
 
-    public static void crearUnidadPersa2() {
+    public static void crearUnidadPersa2(Jugador player) {
         CostoUnidades cs= new CostoUnidades();
         cs.setCostosolados(10);
         int costo=cs.getCostosolados();
         int aux=0;
         int juga=0;
+        aux=player.getMadera();
         System.out.println("¿Que tipo de unidad desea crear? ");
         Scanner scan = new Scanner(System.in);
         String in = scan.nextLine();

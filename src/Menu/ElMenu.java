@@ -48,7 +48,7 @@ public class ElMenu {
 
                             break;
                         case 2:
-                            Unidades.unidades.CrearUnidadesTeutones();
+                            Unidades.unidades.CrearUnidadesTeutones(player);
 
                             Unidades.unidades.mostrarUnidades();
                             break;
@@ -94,7 +94,7 @@ public class ElMenu {
                             break;
                         case 2:
 
-                            Unidades.unidades.CrearUnidadesMaya();
+                            Unidades.unidades.CrearUnidadesMaya(player);
                             break;
                         case 3:
                             Unidades.unidades.ataque1();
@@ -135,7 +135,7 @@ public class ElMenu {
                             Estructuras.MetodosDeEstructura.seteos(player);
                             break;
                         case 2:
-                            Unidades.unidades.crearUnidadPersa();
+                            Unidades.unidades.crearUnidadPersa(player);
                             break;
                         case 3:
                             Unidades.unidades.ataque1();
@@ -175,7 +175,7 @@ public class ElMenu {
                             Estructuras.MetodosDeEstructura.seteos(player);
                             break;
                         case 2:
-                            Unidades.unidades.crearUnidadTeuton2();
+                            Unidades.unidades.crearUnidadTeuton2(player);
                             Unidades.unidades.mostrarUnidades2();
                             break;
                         case 3:
@@ -216,7 +216,7 @@ public class ElMenu {
                             Estructuras.MetodosDeEstructura.seteos(player);
                             break;
                         case 2:
-                           Unidades.unidades.crearUnidadMaya2();
+                           Unidades.unidades.crearUnidadMaya2(player);
                             break;
                         case 3:
                            Unidades.unidades.ataque2();
@@ -256,7 +256,7 @@ public class ElMenu {
                             Estructuras.MetodosDeEstructura.seteos(player);
                             break;
                         case 2:
-                            Unidades.unidades.crearUnidadPersa2();
+                            Unidades.unidades.crearUnidadPersa2(player);
                             break;
                         case 3:
                             Unidades.unidades.ataque2();
