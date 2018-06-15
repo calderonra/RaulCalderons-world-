@@ -12,6 +12,7 @@ import Menu.ElMenuDeRazas;
 import Unidades.unidad;
 import fabricas.FabricaAbs;
 import fabricas.FabricadeFabricas;
+import manual.manual;
 import razas.razas;
 
 /**
@@ -24,7 +25,11 @@ public class RaulCalderonsWorld {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        fases fases = new fases();
-        fases.inicio();
+        
+         manual a=new manual();
+        System.out.println(a.leer("C:\\Users\\RAUL\\Documents\\NetBeansProjects\\RaulCalderons-world-2\\prueba.txt"));
+        
+        //fases fases = new fases();
+        //fases.inicio();
     }
 }
