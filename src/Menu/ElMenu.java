@@ -43,7 +43,7 @@ public class ElMenu {
                     opcion = leer.nextInt();
                     switch (opcion) {
                         case 1:
-                            Estructuras.MetodosDeEstructura.agregarEstructura();
+                            Estructuras.MetodosDeEstructura.agregarEstructura(player);
                             Estructuras.MetodosDeEstructura.seteos(player);
 
                             break;
@@ -89,7 +89,7 @@ public class ElMenu {
                     switch (opcion) {
                         case 1:
 
-                            Estructuras.MetodosDeEstructura.agregarEstructura();
+                            Estructuras.MetodosDeEstructura.agregarEstructura(player);
                             Estructuras.MetodosDeEstructura.seteos(player);
                             break;
                         case 2:
@@ -132,7 +132,7 @@ public class ElMenu {
                     switch (opcion) {
                         case 1:
 
-                            Estructuras.MetodosDeEstructura.agregarEstructura();
+                            Estructuras.MetodosDeEstructura.agregarEstructura(player);
                             Estructuras.MetodosDeEstructura.seteos(player);
                             break;
                         case 2:
@@ -173,7 +173,7 @@ public class ElMenu {
                     switch (opcion) {
                         case 1:
 
-                            Estructuras.MetodosDeEstructura.agregarEstructura();
+                            Estructuras.MetodosDeEstructura.agregarEstructura(player);
                             Estructuras.MetodosDeEstructura.seteos(player);
                             break;
                         case 2:
@@ -215,7 +215,7 @@ public class ElMenu {
                     switch (opcion) {
                         case 1:
 
-                            Estructuras.MetodosDeEstructura.agregarEstructura();
+                            Estructuras.MetodosDeEstructura.agregarEstructura(player);
                             Estructuras.MetodosDeEstructura.seteos(player);
                             break;
                         case 2:
@@ -257,7 +257,7 @@ public class ElMenu {
                     switch (opcion) {
                         case 1:
 
-                            Estructuras.MetodosDeEstructura.agregarEstructura();
+                            Estructuras.MetodosDeEstructura.agregarEstructura(player);
                             Estructuras.MetodosDeEstructura.seteos(player);
                             break;
                         case 2:
