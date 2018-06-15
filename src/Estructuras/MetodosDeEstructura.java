@@ -21,7 +21,9 @@ public class MetodosDeEstructura {
     public static void inicarEstructura() {
         edificios.add(new estructura("Centro de mando", 0, 0, 0, 0));
     }
-
+/**
+ * re recorre el array de los vehiculos para mopstrar todos sus elementos 
+ */
     public static void mostrarEstrcutura() {
         int i = 1;
         for (estructura e : edificios) {
@@ -29,7 +31,10 @@ public class MetodosDeEstructura {
             i++;
         }
     }
-
+/**
+ * Creamos las estructuras que a la vez vamos a restar los atributos del jugador dependiendo de los materiales necesarios para hacerla 
+ * @param player 
+ */
     public static void agregarEstructura(Jugador player) {
         CostoUnidades cs = new CostoUnidades();
         cs.setCostoestructura(200);
@@ -37,6 +42,7 @@ public class MetodosDeEstructura {
         int aux = 0;
         int juga = 0;
         aux = player.getPiedra();
+
         System.out.println("¿Que tipo de unidad desea crear? ");
         Scanner scan = new Scanner(System.in);
         String in = scan.nextLine();
@@ -54,7 +60,10 @@ public class MetodosDeEstructura {
             System.out.println("Recursos insuficientes :0!");
         }
     }
-
+/**
+ * con esto asiganmaosel valordela vida a otro kugador
+ * @param jugador 
+ */
     public static void seteos(Jugador jugador) {
         CostoUnidades cs = new CostoUnidades();
         cs.setCostoestructura(100);

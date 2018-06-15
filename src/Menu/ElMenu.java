@@ -13,7 +13,9 @@ import java.util.Scanner;
  * @author Raul Calderon <https://github.com/calderonra>
  */
 public class ElMenu {
-
+/**
+ * el menu de opcionwa
+ */
     public void opciones() {
         System.out.println("---- Menu de jugador ----");
         System.out.println("1. Crear minas");
@@ -25,7 +27,11 @@ public class ElMenu {
         System.out.println("8. Finalizar turno");
         System.out.print(": ");
     }
-
+/**
+ * Este es el menu que va a recibir al jugador de parametro 
+ * @param player 
+ */
+    
     public void menu(Jugador player) {
 
         Scanner leer = new Scanner(System.in);
@@ -58,10 +64,11 @@ public class ElMenu {
 
                             break;
                         case 4:
-                            //
+                            System.out.println("Metodo no disponible");
                             break;
                         case 5:
-                            //
+                            vehiculos.MetodosDeVehiculo.creaVehiculoTeuton(player);
+                            vehiculos.MetodosDeVehiculo.mostrarEstrcutura1();
                             break;
                         case 6:
                             //
@@ -100,10 +107,11 @@ public class ElMenu {
                             Unidades.unidades.ataque1();
                             break;
                         case 4:
-                            //
+                            System.out.println("Metodo no disponible");
                             break;
                         case 5:
-                            //
+                            vehiculos.MetodosDeVehiculo.crearVehiculoMaya(player);
+                            vehiculos.MetodosDeVehiculo.mostrarEstrcutura1();
                             break;
                         case 6:
                             //
@@ -142,7 +150,7 @@ public class ElMenu {
                             Unidades.unidades.ataque1();
                             break;
                         case 4:
-                            //
+                            System.out.println("Metodo no disponible");
                             break;
                         case 5:
                             //
@@ -184,7 +192,7 @@ public class ElMenu {
                             Unidades.unidades.ataque2();
                             break;
                         case 4:
-                            //
+                            System.out.println("Metodo no disponible");
                             break;
                         case 5:
                             //
@@ -225,7 +233,7 @@ public class ElMenu {
                             Unidades.unidades.ataque2();
                             break;
                         case 4:
-                            //
+                            System.out.println("Metodo no disponible");
                             break;
                         case 5:
                             //

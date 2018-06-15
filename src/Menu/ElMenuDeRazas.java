@@ -24,7 +24,11 @@ public class ElMenuDeRazas {
         System.out.println("3. Persas");
         System.out.println("ingresa el numero por favor: ");
     }
-
+/**
+ * el menun de la raza 1 con esta se hacen las factory del jugador1
+ * @param jugador
+ * @return 
+ */
     public String menuR(Jugador jugador) {
         Scanner leer = new Scanner(System.in);
         FabricaAbs fabrica = FabricadeFabricas.getfabrica("razas");
